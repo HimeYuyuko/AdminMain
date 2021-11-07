@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<meta charset="UTF-8">
+		<title>Signup Admin</title>
+	</head>
+	<body>
+		<form method="post" th:action="@{/signup}" id="signupForm">
+			<p><label>id: <input type="text" name="username" /></label></p>
+			<p><label>email: <input type="email" name="email" /></label></p>
+			<p><label>password: <input type="password" /></label></p>
+			<p><label>password confirm: <input type="password" name="password" /></label></p>
+			<p><input type="submit" value="signup" /></p>
+		</form>
+	</body>
+</html>
